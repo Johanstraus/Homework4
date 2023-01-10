@@ -1,46 +1,36 @@
-#wrapper {
-    position: absolute;
-    left: 30%;
-    top: 20%;
-    width: 500px;
-    height: 500px;
-    border: 1px solid lavender;
+/* Hiding sections minus title */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: grey;
 }
-#startTime{
-    background-color: lavender;
-    margin-left: 33%;
-    padding: 15px 34px;
-    font-size: 30px;
-    color: white;
+
+section{
+    background-color: white;
+    border: solid 2px black;
+    padding: 10px;
 }
-#questionDiv{
-    margin: 30px;
+.hide {
+    display: none;
 }
-#currentTime{
-    float: right;
-}
-button{
-    border-radius: 10px;
+
+.show {
+    display: block;
 }
 h1{
     text-align: center;
 }
-@media screen and (max-width: 700px){
-    body{
-        max-width: 600px;
-    }
-    #wrapper{
-        position: absolute;
-        left: 30%;
-    }
+
+p{
+    padding: 0 10%;
 }
-@media screen and (max-width: 500px){
-    body{
-        min-width: 500px;
-    }
-    #wrapper{
-        position: absolute;
-        left: 20%;
-    }
-    
+
+#startButton{
+    display: block;
+    margin: 0 auto;
+}
+
+.choice{
+    display: block;
+    margin-top: 10px;
 }
